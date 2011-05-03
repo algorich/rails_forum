@@ -6,16 +6,17 @@ Gem::Specification.new do |s|
   s.name        = "rails_forum"
   s.version     = RailsForum::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Eduardo Hertz"]
+  s.email       = ["eduardo[at]algorich.com.br"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A web forum for rails applications.}
+  s.description = %q{A web forum for rails applications.}
 
   s.rubyforge_project = "rails_forum"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.require_paths = ["lib", "app"]
 end
+
