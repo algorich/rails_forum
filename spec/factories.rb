@@ -3,3 +3,9 @@ Factory.define :category, :class => RailsForum::Category do |c|
   c.description "Some description"
 end
 
+Factory.define :topic, :class => RailsForum::Topic do |t|
+  t.title "This is a topic"
+  t.content "This the content of this particular topic."
+  t.association :category
+end
+
