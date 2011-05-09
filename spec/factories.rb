@@ -9,3 +9,8 @@ Factory.define :topic, :class => RailsForum::Topic do |t|
   t.association :category
 end
 
+Factory.define :message, :class => RailsForum::Message do |m|
+  m.content "This is a message!!"
+  m.association :topic
+end
+
