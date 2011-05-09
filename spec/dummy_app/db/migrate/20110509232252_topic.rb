@@ -2,7 +2,7 @@ class Topic < ActiveRecord::Migration
   def self.up
     create_table :topics do |t|
       t.string  :title
-      t.string :content
+      t.text :content
       t.references :category
     end
   end
