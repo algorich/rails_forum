@@ -9,6 +9,16 @@ describe RailsForum::Topic do
       topic.save.should be_false
     end
 
+    it 'presence of content' do
+      topic = Factory.build :topic, :content => ""
+      topic.save.should be_false
+    end
+
+    it 'presence of one category' do
+      topic = Factory.build :topic, :category => nil
+      topic.save.should be_false
+    end
+
   end
 
 

@@ -2,5 +2,5 @@
 .bundle
 Gemfile.lock
 pkg/*
-spec/app_test/log/
+spec/dummy_app/log/
 
