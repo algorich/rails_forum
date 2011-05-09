@@ -13,11 +13,8 @@
 ActiveRecord::Schema.define(:version => 20110503230148) do
 
   create_table "categories", :force => true do |t|
-    t.string  "name"
-    t.string  "label"
-    t.text    "value"
-    t.string  "type"
-    t.integer "position"
+    t.string "name"
+    t.string "description"
   end
 
 end

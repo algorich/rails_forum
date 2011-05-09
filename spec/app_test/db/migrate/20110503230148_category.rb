@@ -2,10 +2,7 @@ class Category < ActiveRecord::Migration
   def self.up
     create_table :categories do |t|
       t.string  :name
-      t.string  :label
-      t.text  :value
-      t.string  :type
-      t.integer  :position
+      t.string :description
     end
   end
 

@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency("rspec", "2.5.0")
   s.add_dependency("devise", "1.3.4")
+  s.add_dependency("factory_girl", "1.3.3")
 end
 
