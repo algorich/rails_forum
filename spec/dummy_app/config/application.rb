@@ -10,6 +10,9 @@ $:.unshift(File.expand_path(File.dirname(__FILE__) + '/../../../lib'))
 
 require File.expand_path(File.dirname(__FILE__) + '/../../../lib/rails_forum')
 
+require 'inherited_resources'
+require 'devise'
+
 module AppTest
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
