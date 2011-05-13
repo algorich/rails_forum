@@ -12,12 +12,16 @@ module RailsForum
         lambda { get :edit, :id => "1" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
       end
 
+      it 'create a category' do
+        lambda { post :create, :id => "2" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
+      end
+
       it 'update a category' do
-        lambda { post :update, :id => "2" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
+        lambda { put :update, :id => "2" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
       end
 
       it 'destroy a category' do
-        lambda { post :destroy, :id => "2" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
+        lambda { delete :destroy, :id => "2" }.should raise_error(::NoMethodError, "undefined method `authenticate!' for nil:NilClass")
       end
 
     end

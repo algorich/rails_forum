@@ -4,5 +4,5 @@ Gemfile.lock
 pkg/*
 spec/dummy_app/log/
 spec/dummy_app/test
-spec/dummy_app/*.sqlite3
+spec/dummy_app/db/*.sqlite3
 
