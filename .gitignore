@@ -3,4 +3,5 @@
 Gemfile.lock
 pkg/*
 spec/dummy_app/log/
+spec/dummy_app/test
 
