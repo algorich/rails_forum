@@ -14,3 +14,10 @@ Factory.define :message, :class => RailsForum::Message do |m|
   m.association :topic
 end
 
+Factory.define :user do |u|
+  random = rand(100)
+  u.email "some_#{random}@mail.com"
+  u.password "123456"
+  u.password_confirmation "123456"
+end
+

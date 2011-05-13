@@ -1,9 +1,27 @@
+ENV["RAILS_ENV"] = "test"
 
 require "dummy_app/config/environment"
 
 require 'rails/test_help'
 require 'rspec/rails'
 require 'steak'
+require 'capybara/rspec'
 require 'factory_girl'
 require 'factories'
+require 'database_helper'
+
+
+include DatabaseHelper
+
+puts 'Setting up database...'
+drop_all_tables
+migrate_database
+
+
+def log_in(email, password)
+  visit "/users/sign_in"
+  fill_in("Email", :with => email)
+  fill_in("Password", :with => password)
+  click_button("Sign in")
+end
 
