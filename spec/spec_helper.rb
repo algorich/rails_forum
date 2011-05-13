@@ -17,6 +17,17 @@ puts 'Setting up database...'
 drop_all_tables
 migrate_database
 
+RSpec.configure do |config|
+
+  config.before(:each) do
+
+    RailsForum::Category.delete_all
+    User.delete_all
+
+  end
+
+end
+
 
 def log_in(email, password)
   visit "/users/sign_in"
