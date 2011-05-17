@@ -9,6 +9,8 @@ require 'capybara/rspec'
 require 'factory_girl'
 require 'factories'
 require 'database_helper'
+require 'generator_spec/test_case'
+require 'generators/rails_forum/rails_forum_generator'
 
 
 include DatabaseHelper

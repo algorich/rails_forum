@@ -25,5 +25,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency("factory_girl", "1.3.3")
   s.add_development_dependency("steak", "1.0.0")
   s.add_development_dependency("capybara", "0.4.1.2")
+  s.add_development_dependency("generator_spec", "0.8.3")
 end
 
