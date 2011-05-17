@@ -4,7 +4,7 @@
 
 Add in you Gemfile:
 
-    gem 'rails_forum'
+    gem 'rails_forum', :git => 'git://github.com/algorich/rails_forum.git'
 
 ##How to contribute
 1. Take an issue.
