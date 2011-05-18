@@ -14,6 +14,10 @@ describe RailsForum::RailsForumGenerator do
       assert_migration "db/migrate/category.rb"
     end
 
+    it 'topic' do
+      assert_migration "db/migrate/topic.rb"
+    end
+
   end
 
 end

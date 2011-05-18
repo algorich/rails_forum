@@ -21,6 +21,10 @@ module RailsForum
       migration_template "category_table.rb", "db/migrate/category.rb"
     end
 
+    def create_topic_database
+      migration_template "topic_table.rb", "db/migrate/topic.rb"
+    end
+
   end
 
 end
