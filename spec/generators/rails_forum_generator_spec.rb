@@ -18,6 +18,10 @@ describe RailsForum::RailsForumGenerator do
       assert_migration "db/migrate/topic.rb"
     end
 
+    it 'message' do
+      assert_migration "db/migrate/message.rb"
+    end
+
   end
 
 end
